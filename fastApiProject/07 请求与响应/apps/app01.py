@@ -1,6 +1,5 @@
 from fastapi import APIRouter
 
-
 app01 = APIRouter()
 
 
@@ -15,12 +14,11 @@ app01 = APIRouter()
 
 
 # 顺序影响路径
-@app.get('/user/me')
+@app01.get('/user/me')
 async def read_user_me():
     return {"user_id": "the current user"}
 
 
-@app.get('/user/{username}')
+@app01.get('/user/{username}')
 async def read_user(username: str):
     return {"user_name": username}
-

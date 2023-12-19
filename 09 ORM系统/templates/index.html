@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello index</h1>
+<ul>
+    {% for student in students %}
+        <li>姓名: {{ student.name }} 学号: {{ student.sno }}</li>
+    {% endfor %}
+
+</ul>
+</body>
+</html>
